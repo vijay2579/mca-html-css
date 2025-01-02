@@ -6,3 +6,56 @@
 ul {
   list-style: none;
 }
+
+.container {
+  .header {
+    height: 240px;
+  }
+  .content {
+    background-color: #F2F2FE;
+    padding: 50px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
+      li {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        border-radius: 5px;
+        position: relative;
+        .product {
+          .text {
+            text-align: center;
+            padding: 10px;
+            color: #FFFFFF;
+            p {
+              margin-top: 15px;
+              font-size: 14px;
+            }
+          }
+          button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border: none;
+            background-color: #01308F;
+            height: 35px;
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+          img {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
